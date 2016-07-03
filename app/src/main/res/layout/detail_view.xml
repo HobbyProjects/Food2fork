@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+    <TextView
+        android:text="Rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/RankTB" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/image"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="78dp"
+        android:id="@+id/ingredientsTB" />
+
+    <Button
+        android:text="      View Original    "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/viewOrgBtn"
+        android:layout_above="@+id/publisherTB" />
+
+    <Button
+        android:text="View Instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/instructionsBtn"
+        android:layout_above="@+id/viewOrgBtn"
+        android:layout_alignStart="@+id/viewOrgBtn" />
+
+    <TextView
+        android:text="Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/instructionsBtn"
+        android:layout_alignParentStart="true"
+        android:id="@+id/infoTB" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ingredientsTB"
+        android:layout_above="@+id/infoTB"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ingre_list"
+        android:footerDividersEnabled="true" />
+
+    <TextView
+        android:text="Publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/publisherTB"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/ingredientsTB" />
+
+</RelativeLayout>
